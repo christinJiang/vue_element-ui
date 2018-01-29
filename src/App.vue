@@ -1,13 +1,19 @@
 <template>
   <div id="app">
+    <nav-side-bar></nav-side-bar>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
 
 <script>
+import NavSideBar from './components/NavSideBar';
+
 export default {
   name: 'App',
+  components: {
+    NavSideBar,
+  },
 };
 </script>
 

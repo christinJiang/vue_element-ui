@@ -45,6 +45,14 @@ module.exports = {
       optionalDependencies: ['test/unit/index.js']
     }],
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 允许使用console.log, console.error等命令，不报错
+    'no-console': 0,
+    // 允许使用alert命令，不报错
+    'no-alert': 0,
+    // 不再报换行符相关的错误
+    'linebreak-style': 0,
+    // 不允许在字符串和正则表达式中使用无意义的换行符
+    'no-useless-escape': 0,
   }
 }
