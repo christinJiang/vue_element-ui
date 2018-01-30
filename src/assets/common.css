@@ -4,7 +4,7 @@ html,body{
   font-size: 14px;
   color: #152935;
 }
-/* 主页面外框 */
+/* page content */
 .page{
   background-color: #f5f7fa;
   min-height: 100%;
@@ -16,7 +16,7 @@ html,body{
 .pageCon h2{
   padding: 20px 0 10px 0;
 }
-/* panel模块 */
+/* panel */
 .panel{
   background: #fff;
   border-radius: 0;
@@ -38,36 +38,29 @@ html,body{
 .panel-body {
   padding: 0 15px 10px 15px;
 }
-/* 按钮 */
-.btn, .el-button {
+/* button */
+.el-button {
   border-radius: 0;
   padding: 0;
 }
-.btn+.btn{
-  margin-left: 10px;
-}
-.btn span, .el-button span {
+.el-button span {
   display: block;
-  padding: 8px 12px;
+  padding: 11px 12px;
   margin: 1px;
 }
-.el-button span {
-  padding: 11px 12px;
-}
-.btn-primary, .btn-primary:focus,
 .el-button--primary, .el-button--primary:focus {
   background-color: #3D70B2;
   border-color: #3D70B2;
 }
-.btn-primary:hover, .el-button--primary:hover{
+.el-button--primary:hover{
   background-color: #5596E6;
   border-color: #5596E6;
 }
-.btn-primary:active:focus,.el-button--primary:active:focus{
+.el-button--primary:active:focus{
   background-color: #fff;
   border-color: #5596E6;
 }
-.btn-primary:active:focus span,.el-button--primary:active:focus span{
+.el-button--primary:active:focus span{
   background-color: #5596E6;
 }
 .el-button--primary.is-disabled,
@@ -75,17 +68,13 @@ html,body{
   background-color: #3D70B2;
   border-color: #3D70B2;
 }
-
-.btn-default,.btn-default:focus,
 .el-button--primary.is-plain,
 .el-button--primary.is-plain.is-disabled,
-.btn-default[disabled]:hover,
 .el-button--primary.is-plain.is-disabled:hover {
   background-color: transparent;
   border-color: #3D70B2;
   color: #3D70B2;
 }
-.btn-default:hover,.btn-default:active:focus,
 .el-button--primary.is-plain:hover,
 .el-button--primary.is-plain:active,
 .el-button--primary.is-plain:active:focus {
