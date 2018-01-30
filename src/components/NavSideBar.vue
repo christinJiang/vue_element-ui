@@ -3,7 +3,7 @@
     <div>
       <p>金凤的管理软件</p>
     </div>
-    <el-menu class="el-menu-vertical-demo">
+    <el-menu class="el-menu-vertical-demo" router>
       <el-menu-item index="/">
         <i class="el-icon-picture"></i>
         <span>Hello</span>
