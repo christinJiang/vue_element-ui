@@ -89,9 +89,3 @@ html,body{
 .el-button--primary.is-plain.is-disabled {
   opacity: 0.5;
 }
-
-.btn i{
-  font-size: 18px;
-  vertical-align: middle;
-  margin-top: -3px;
-}
