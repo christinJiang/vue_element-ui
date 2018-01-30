@@ -7,7 +7,7 @@
           <div class="panel-heading">
             <h3 class="panel-title">Panel title</h3>
           </div>
-          <div>
+          <div class="panel-body">
             Panel body ...
           </div>
         </div>
@@ -17,9 +17,9 @@
         <h2>文字</h2>
         <div class="panel">
           <div class="panel-heading">
-            <h3>链接</h3>
+            <h3 class="panel-title">链接</h3>
           </div>
-          <div>
+          <div class="panel-body">
             <!--链接 代码开始-->
             <a href="">默认</a>
             <a href="" class="disabled">不可点</a>
@@ -41,9 +41,9 @@
         <h2>Tabs 标签页</h2>
         <div class="panel">
           <div class="panel-heading">
-            <h3>样式1</h3>
+            <h3 class="panel-title">样式1</h3>
           </div>
-          <div>
+          <div class="panel-body">
             <!--代码开始-->
             <el-tabs v-model="dataInfo.activeName" @tab-click="handleClick">
               <el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
@@ -60,9 +60,9 @@
         <h2>Button</h2>
         <div class="panel">
           <div class="panel-heading">
-            <h3>Element UI button</h3>
+            <h3 class="panel-title">Element UI button</h3>
           </div>
-          <div>
+          <div class="panel-body">
             <span>可点击： </span>
             <el-button type="primary">主要按钮</el-button>
             <el-button type="primary" plain>主要按钮</el-button>

@@ -9,9 +9,12 @@ html,body{
   background-color: #f5f7fa;
   min-height: 100%;
 }
-.pageCon{
+.pageCon {
   padding: 0 5%;
   padding-bottom: 20px;
+}
+.pageCon h2{
+  padding: 20px 0 10px 0;
 }
 /* panel模块 */
 .panel{
@@ -24,12 +27,21 @@ html,body{
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: solid 1px #DFE3E6;
+  font-size: 16px;
+  color: inherit;
+  padding: 10px 15px;
+}
+.panel-body {
+  padding: 0 15px 10px 15px;
+}
 /* 按钮 */
 .btn, .el-button {
   border-radius: 0;
   padding: 0;
-  transition: 0;
 }
 .btn+.btn{
   margin-left: 10px;
