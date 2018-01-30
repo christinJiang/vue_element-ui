@@ -1,0 +1,96 @@
+/* base */
+html,body{
+  height: 100%;
+  font-size: 14px;
+  color: #152935;
+}
+/* 主页面外框 */
+.page{
+  background-color: #f5f7fa;
+  min-height: 100%;
+}
+.pageCon{
+  padding: 0 5%;
+  padding-bottom: 20px;
+}
+/* panel模块 */
+.panel{
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+}
+.panel .panel-heading {
+  border-color: #DFE3E6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* 按钮 */
+.btn, .el-button {
+  border-radius: 0;
+  padding: 0;
+  transition: 0;
+}
+.btn+.btn{
+  margin-left: 10px;
+}
+.btn span, .el-button span {
+  display: block;
+  padding: 8px 12px;
+  margin: 1px;
+}
+.el-button span {
+  padding: 11px 12px;
+}
+.btn-primary, .btn-primary:focus,
+.el-button--primary, .el-button--primary:focus {
+  background-color: #3D70B2;
+  border-color: #3D70B2;
+}
+.btn-primary:hover, .el-button--primary:hover{
+  background-color: #5596E6;
+  border-color: #5596E6;
+}
+.btn-primary:active:focus,.el-button--primary:active:focus{
+  background-color: #fff;
+  border-color: #5596E6;
+}
+.btn-primary:active:focus span,.el-button--primary:active:focus span{
+  background-color: #5596E6;
+}
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:hover{
+  background-color: #3D70B2;
+  border-color: #3D70B2;
+}
+
+.btn-default,.btn-default:focus,
+.el-button--primary.is-plain,
+.el-button--primary.is-plain.is-disabled,
+.btn-default[disabled]:hover,
+.el-button--primary.is-plain.is-disabled:hover {
+  background-color: transparent;
+  border-color: #3D70B2;
+  color: #3D70B2;
+}
+.btn-default:hover,.btn-default:active:focus,
+.el-button--primary.is-plain:hover,
+.el-button--primary.is-plain:active,
+.el-button--primary.is-plain:active:focus {
+  color: #fff;
+  background-color: #3D70B2;
+  border-color: #3D70B2;
+}
+.el-button--primary.is-plain:focus span{
+  background-color: transparent;
+}
+.el-button--primary.is-disabled,
+.el-button--primary.is-plain.is-disabled {
+  opacity: 0.5;
+}
+
+.btn i{
+  font-size: 18px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
