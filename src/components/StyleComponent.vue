@@ -74,6 +74,21 @@
           </div>
         </div>
       </div>
+
+      <div>
+        <h2>表格</h2>
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">表格1</h3>
+          </div>
+          <div class="panel-body">
+            <div class="table-header_L">
+            </div>
+            <div class="table-header_R">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

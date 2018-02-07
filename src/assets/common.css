@@ -19,12 +19,10 @@ html,body{
 /* panel */
 .panel{
   background: #fff;
-  border-radius: 0;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 .panel .panel-heading {
-  border-color: #DFE3E6;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 15px;
 }
 .panel-title {
