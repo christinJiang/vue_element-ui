@@ -87,3 +87,105 @@ html,body{
 .el-button--primary.is-plain.is-disabled {
   opacity: 0.5;
 }
+.table-head{
+  display: table;
+  width: 100%;
+}
+.table-head_L, .table-head_R{
+  display: table-cell;
+}
+.table-head_L .el-button {
+  margin: 0;
+}
+.searchBar {
+  max-width: 300px;
+}
+.searchBar .el-input__suffix {
+  right: -25px;
+}
+.searchBar .el-input {
+  min-width: 30px;
+  overflow: hidden;
+}
+.searchBar .el-input-group__append {
+  background-color: transparent;
+  border: 0;
+}
+.searchBar .el-input__inner {
+  width: 0;
+  padding: 0;
+  border: 0;
+  height: 32px;
+  opacity: 0;
+  margin-left: auto;
+  margin-right: 0;
+  background:rgba(61,112,178,.1);
+}
+.searchBar .el-input-group__append {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 5px;
+  width: 30px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+.searchInputShow .el-input__inner {
+  animation: searchTextOpen 0.5s ease;
+  animation-fill-mode: forwards;
+}
+.searchInputHide .el-input__inner {
+  animation: searchTextClose 0.5s ease;
+  animation-fill-mode: forwards;
+}
+.searchInputShow .el-input-group__append {
+  animation: searchIconOpen 0.5s ease;
+  animation-fill-mode: forwards;
+}
+.searchInputHide .el-input-group__append {
+  animation: searchIconClose 0.5s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes searchTextOpen {
+  from {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    padding: 6px 0 6px 30px;
+    opacity: 1;
+  }
+}
+@keyframes searchTextClose {
+  from {
+    width: 100%;
+    padding: 6px 0 6px 30px;
+    opacity: 1;
+  }
+  to {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}
+@keyframes searchIconOpen {
+  from {
+    right: 0;
+  }
+  to {
+    right: calc(100% - 30px);
+  }
+}
+@keyframes searchIconClose {
+  from {
+    right: calc(100% - 30px);
+  }
+  to {
+    right: 0;
+  }
+}
+

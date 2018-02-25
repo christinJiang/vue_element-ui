@@ -82,9 +82,28 @@
             <h3 class="panel-title">表格1</h3>
           </div>
           <div class="panel-body">
-            <div class="table-header_L">
-            </div>
-            <div class="table-header_R">
+            <div class="table-head">
+              <div class="table-head_L">
+                <el-button type="primary"><i class="el-icon-circle-plus-outline"></i>添加</el-button>
+                <el-button type="primary" plain><i class="el-icon-caret-right"></i>启动</el-button>
+                <el-button type="primary" plain><i class="el-icon-remove"></i>停止</el-button>
+                <el-button type="primary" plain><i class="el-icon-delete"></i>删除</el-button>
+              </div>
+              <div class="table-head_R">
+                <div class="searchBar">
+                  <el-input v-model="dataInfo.search.filterDomain"
+                    @keyup.enter.native="getListData()"
+                    @blur="searchInputOnBlur()"
+                    id="searchInput"
+                    :class="{searchInputShow:dataInfo.search.searchShow,
+                    searchInputHide:dataInfo.search.searchHide}"
+                    placeholder="输入" :maxlength="100" clearable>
+                    <template slot="append"><i class="el-icon-search"
+                      @click="!!dataInfo.search.isSearch
+                      ? getListData() : searchHandle()"></i></template>
+                  </el-input>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -93,6 +112,7 @@
   </div>
 </template>
 <script>
+
 export default {
   mounted: function first() {
     console.log('I am Styles');
@@ -101,11 +121,36 @@ export default {
     handleClick(tab, event) {
       console.log(tab, event);
     },
+    getListData() {
+      console.log('Get data from server with search condition');
+    },
+    searchHandle() {
+      console.log('search handler');
+      // event.stopPropagation();
+      this.dataInfo.search.searchShow = true;
+      this.dataInfo.search.searchHide = false;
+      this.dataInfo.search.isSearch = true;
+      setTimeout(() => { document.getElementById('searchInput').focus(); }, 600);
+    },
+    searchInputOnBlur() {
+      console.log('blur');
+      if (this.dataInfo.search.filterDomain === '') {
+        this.dataInfo.search.searchShow = false;
+        this.dataInfo.search.searchHide = true;
+        this.dataInfo.search.isSearch = false;
+      }
+    },
   },
   data() {
     return {
       dataInfo: {
         activeName: 'second',
+        search: {
+          filterDomain: '',
+          searchShow: false, // show search input
+          searchHide: true, // hide search input
+          isSearch: false,
+        },
       },
     };
   },
