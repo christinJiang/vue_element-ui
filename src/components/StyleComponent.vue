@@ -103,6 +103,10 @@
                       ? getListData() : searchHandle()"></i></template>
                   </el-input>
                 </div>
+                <div class="refreshStyle">
+                  <i v-show='!dataInfo.loading' class="el-icon-refresh" @click="getListData()"></i>
+                  <i v-show='dataInfo.loading' class="el-icon-loading"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -151,6 +155,7 @@ export default {
           searchHide: true, // hide search input
           isSearch: false,
         },
+        loading: false,
       },
     };
   },

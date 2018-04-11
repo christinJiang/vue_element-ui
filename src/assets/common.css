@@ -188,4 +188,11 @@ html,body{
     right: 0;
   }
 }
+.table-head_R {
+  text-align: right;
+}
+.table-head_R .searchBar,.table-head_R .refreshStyle {
+  display: inline-block;
+  vertical-align: middle;
+}
 
